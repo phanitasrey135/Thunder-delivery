@@ -496,52 +496,102 @@
                 </script>
             </div>
           </div>
-            <!-- footer -->
-        <div class="container mt-5">
+          <!-- food promote -->
+            <div class="container-fluid mt-5" >
             <div class="row">
-                <div class="col" style="width: 200px;">
-                    <div style="display: flex;align-items: center;"> <i class="fa-solid fa-cloud-bolt"
-                            style="margin-right: 5px;font-size: 30px;color: rgb(53, 161, 229);"></i>
-                        <h1 style="font-size: 18px;text-transform: uppercase;">Thunder delivery</h1>
-                    </div>
-                    <!-- <p style="margin-top: 5px;">please scan for contace to me</p> -->
-                    <img src="./img/m3.jpg" alt="" style="width: 100px;height: 80px;object-fit: cover;margin-top: 20px;">
-                </div>
                 <div class="col">
-                    <h1 style="font-size: 24px;text-transform: uppercase;">contace with us</h1>
-                    <div style="display: flex;align-items: center;margin-top: 20px;"><i class="fa-brands fa-square-facebook"
-                            style="font-size: 20px;margin-right: 10px;color: rgb(53, 161, 229);"></i><a href="#"
-                            style="text-decoration: none;color: black;font-size: 18px;">face book</a></div>
-                    <div style="display: flex;align-items: center;margin-top: 10px;"><i class="fa-brands fa-tiktok"
-                            style="font-size: 20px;margin-right: 10px;color: rgb(53, 161, 229);"></i><a href="#"
-                            style="text-decoration: none;color: black;font-size: 18px;">Tik Tok</a></div>
-                     <div style="display: flex;align-items: center;margin-top: 10px;"><i class="fa-brands fa-telegram"
-                            style="font-size: 20px;margin-right: 10px;color: rgb(53, 161, 229);"></i><a href="#"
-                            style="text-decoration: none;color: black;font-size: 18px;">Telegram</a></div>
+                    <h1 style="text-align: center;text-transform: uppercase;">food promote</h1>
                 </div>
-               <!--  -->
-                 <div class="col">
-                    <h1 style="font-size: 24px;text-transform: uppercase;">We accept</h1>
-                   <i class="fa-brands fa-cc-visa" style="font-size: 30px; margin-top: 20px;color: rgb(53, 161, 229);"></i>
-                   <i class="fa-solid fa-qrcode" style="font-size: 30px; margin-top: 20px;margin-left: 10px;color: rgb(53, 161, 229);"></i>
-                   <i class="fa-solid fa-money-bill-1" style="font-size: 30px; margin-top: 20px;margin-left: 10px;color: rgb(53, 161, 229);"></i>
                 </div>
-                <div class="col">
-                    <h1 style="font-size: 20px;text-transform: uppercase;">we are number phone</h1>
-                    <div style="display: flex;margin-top: 20px;">
-                        <i class="fa-solid fa-phone" style="color: rgb(53, 161, 229);font-size: 20px;"></i>
-                        <p style="margin-left: 10px;">(++855) 719234550</p>
+                </div> 
+                 <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p style="font-size: 18px;">if you want to order ready cooked food please
+                                check in here because in here have more type of food for your choose.I confirm to you for all for of
+                                order that is order from shop and delivery to your home .So when have problem we are don`t responsible.
+                            </p>
+                            <p>We team got for promote more service on my website 30$ on 1 month if you want to rent we promote your product we by</p>
+                            <div style="display: flex;margin-top: 30px;">
+                                <div class="col-sm-6" style="display: flex;">
+                                    <img src="./img/inb1.png" alt="" style="width: 100%;height: 100%;margin-left: 100px;">
+                                </div>
+                               <div class="col-sm-6">
+                                 <button class="btn btn-warning"><a href="#" style="text-decoration: none;color: black;font-weight: bold;">contacte</a></button>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="display: flex;align-items: center;justify-content: center;">
+                            <img class="q" src="./img/inb.png" alt="" style="width: 80%;height: 100%;">
+                            <img class="q" src="./img/ind2.png" alt="" style="width: 80%;height: 100%;">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-<!-- end footer -->
- <div class="container mt-5">
-    <hr>
-    <p style="float: right;font-weight: bold;padding: 10px;">3/08/2025 @Thunder delivery.com</p>
- </div>
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+                <script>
+                    $(document).ready(function(){
+                        var slide = $('.q');
+                        var ind = 0;
+                        slide.hide();
+                        slide.eq(ind).show();
+                        function GetSlideNext(){
+                            slide.eq(ind).hide();
+                            ind++;
+                            if(ind>1){
+                                ind=0;
+                            }
+                            slide.eq(ind).show();
+                        }
+                        setInterval(GetSlideNext,2000);
+                    })
+                </script>
+                <!-- footer -->
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col" style="width: 200px;">
+                            <div style="display: flex;align-items: center;"> <i class="fa-solid fa-cloud-bolt"
+                                    style="margin-right: 5px;font-size: 30px;color: rgb(53, 161, 229);"></i>
+                                <h1 style="font-size: 18px;text-transform: uppercase;">Thunder delivery</h1>
+                            </div>
+                            <!-- <p style="margin-top: 5px;">please scan for contace to me</p> -->
+                            <img src="./img/m3.jpg" alt="" style="width: 100px;height: 80px;object-fit: cover;margin-top: 20px;">
+                        </div>
+                        <div class="col">
+                            <h1 style="font-size: 24px;text-transform: uppercase;">contace with us</h1>
+                            <div style="display: flex;align-items: center;margin-top: 20px;"><i class="fa-brands fa-square-facebook"
+                                    style="font-size: 20px;margin-right: 10px;color: rgb(53, 161, 229);"></i><a href="#"
+                                    style="text-decoration: none;color: black;font-size: 18px;">face book</a></div>
+                            <div style="display: flex;align-items: center;margin-top: 10px;"><i class="fa-brands fa-tiktok"
+                                    style="font-size: 20px;margin-right: 10px;color: rgb(53, 161, 229);"></i><a href="#"
+                                    style="text-decoration: none;color: black;font-size: 18px;">Tik Tok</a></div>
+                            <div style="display: flex;align-items: center;margin-top: 10px;"><i class="fa-brands fa-telegram"
+                                    style="font-size: 20px;margin-right: 10px;color: rgb(53, 161, 229);"></i><a href="#"
+                                    style="text-decoration: none;color: black;font-size: 18px;">Telegram</a></div>
+                        </div>
+                        <!--  -->
+                        <div class="col">
+                            <h1 style="font-size: 24px;text-transform: uppercase;">We accept</h1>
+                            <i class="fa-brands fa-cc-visa" style="font-size: 30px; margin-top: 20px;color: rgb(53, 161, 229);"></i>
+                            <i class="fa-solid fa-qrcode"
+                                style="font-size: 30px; margin-top: 20px;margin-left: 10px;color: rgb(53, 161, 229);"></i>
+                            <i class="fa-solid fa-money-bill-1"
+                                style="font-size: 30px; margin-top: 20px;margin-left: 10px;color: rgb(53, 161, 229);"></i>
+                        </div>
+                        <div class="col">
+                            <h1 style="font-size: 20px;text-transform: uppercase;">we are number phone</h1>
+                            <div style="display: flex;margin-top: 20px;">
+                                <i class="fa-solid fa-phone" style="color: rgb(53, 161, 229);font-size: 20px;"></i>
+                                <p style="margin-left: 10px;">(++855) 719234550</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end footer -->
+                <div class="container mt-5">
+                    <hr>
+                    <p style="float: right;font-weight: bold;padding: 10px;">3/08/2025 @Thunder delivery.com</p>
+                </div>
+                </body>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
     
