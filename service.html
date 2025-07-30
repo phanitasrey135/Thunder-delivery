@@ -64,6 +64,78 @@
         })
     </script>
     <!--  -->
+      <div class="container mt-5">
+        <div class="row gx-1">
+            <div class="col-3">
+             <div class="c">
+                 <div class="card">
+                <img class="o" src="./img/mju1.png" alt="">
+              </div>
+              <div class="card">
+                <img class="o" src="./img/imju1.jpg" alt="">
+              </div>
+             </div>
+               <div class="c">
+                 <div class="card">
+                <img class="u" src="./img/qr.png" alt="">
+              </div>
+               </div>
+            </div>
+            <script>
+                 $(document).ready(function(){
+                     var slide = $('.o');
+                     var ind = 0;
+                     slide.hide();
+                     slide.eq(ind).show();
+                     function GetSlideNext(){
+                        slide.eq(ind).hide();
+                        ind++;
+                        if(ind>1){
+                            ind=0;
+                        }
+                        slide.eq(ind).show();
+                     }
+                    setInterval(GetSlideNext,2000);
+                    var slide1 = $('.c');
+                    slide1.hide();
+                    slide1.eq(ind).show();
+                    $('.o').click(function(){
+                        slide1.eq(ind).hide();
+                        ind++;
+                        if(ind>1){
+                            ind=0;
+                        }
+                        slide1.eq(ind).show();
+                    })
+                    $('.u').click(function(){
+                        slide1.eq(ind).hide();
+                        ind++;
+                        if(ind>1){
+                            ind=0;
+                        }
+                        slide1.eq(ind).show();
+                    })
+                 })
+            </script>
+            <div class="col-3">
+                 <div class="card">
+                    <img src="./img/c.png" alt="">
+                </div>
+                
+            </div>
+            <div class="col-3">
+                 <div class="card">
+                    <img src="./img/c3.png" alt="">
+                </div>
+            </div>
+            <div class="col-3">
+                 <div class="card">
+                    <img src="./img/c2.png" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+    <!--  -->
     <div class="container-fluid">
         <div class="row bg-light">
             <h1 style="text-align: center;padding: 50px;text-transform: uppercase;font-size: 25px;">ingredient suplyer
