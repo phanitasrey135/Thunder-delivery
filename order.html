@@ -1978,5 +1978,150 @@
                 </script>
             </div>
           </div>
+          <!--  -->
+            <div class="container mt-5 mb-5" style="display: flex;align-items: center;justify-content: center;">
+        <div class="row">
+            <!-- 1 -->
+            <div class="col mb-2">
+                <div class="card" style="width: 350px;">
+                    <div class="slide">
+                        <img src="./img/logo.jpg" alt="" style="padding: 5px 5px;width: 350px;">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/m3.jpg" alt="" style="width: 345px;height: 345px;">
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-tittle"
+                            style="display: flex;align-items: center;justify-content: space-between;">
+                            <h1 style="font-size: 23px;text-transform: uppercase;font-weight: bold;">thunder delivery
+                            </h1>
+                            <i class="fa-solid fa-truck" style="font-size: 19px;color: #f1c40f"></i>
+                        </div>
+                        <p style="margin-top: 5px;">We are team is ingridien suplyer for everyone.</p>
+                        <div style="display: flex;align-items: center;justify-content: space-between;">
+                            <div style="font-size: 20px;">
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                            </div>
+                            <button class="btn bg-primary" style="border: none;">contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    //slide card
+                    var slide = $('.slide');
+                    //var ind=1;
+                    var ind = 0;
+                    slide.hide();
+                    slide.eq(ind).show();
+                    //btn
+                    $('.btn').click(function () {
+                        slide.eq(ind).hide();
+                        ind++;
+                        if (ind > 1) {
+                            ind = 0;
+                        }
+                        slide.eq(ind).show();
+                    })
+                })
+            </script>
+            <!-- 2 -->
+            <div class="col mb-2">
+                <div class="card" style="width: 350px;">
+                    <div class="slide1">
+                        <img src="./img/m1.jpg" alt="" style="padding: 5px 5px;width: 350px;">
+                    </div>
+                    <div class="slide1">
+                        <img src="./img/m3.jpg" alt="" style="width: 345px;height: 345px;">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-tittle"
+                            style="display: flex;align-items: center;justify-content: space-between;">
+                            <h1 style="font-size: 23px;text-transform: uppercase;font-weight: bold;">thunder delivery
+                            </h1>
+                            <i class="fa-solid fa-truck" style="font-size: 19px;color: #f1c40f"></i>
+                        </div>
+                        <p style="margin-top: 5px;">We are team is ingridien suplyer for everyone.</p>
+                        <div style="display: flex;align-items: center;justify-content: space-between;">
+                            <div style="font-size: 20px;">
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                            </div>
+                           <button class="btn1 bg-primary" style="border: none;padding: 6px 10px;border-radius: 5px;">contact</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <script>
+                $(document).ready(function () {
+                    var slide = $('.slide1');
+                    ind = 0;
+                    slide.eq(1).hide();
+                    $('.btn1').click(function () {
+                        slide.eq(ind).show();
+                        ind++;
+                        if (ind > 1) {
+                            ind = 0;
+                        }
+                        slide.eq(ind).hide();
+                    })
+                })
+            </script>
+            <!-- 3 -->
+            <div class="col mb-2">
+                <div class="card" style="width: 350px;">
+                    <div class="slide2">
+                        <img src="./img/m2.jpg" alt="" style="padding: 5px 5px;width: 350px;height: 350px;">
+                    </div>
+                    <div class="slide2">
+                        <img src="./img/m3.jpg" alt="" style="width: 345px;height: 345px;">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-tittle"
+                            style="display: flex;align-items: center;justify-content: space-between;">
+                            <h1 style="font-size: 23px;text-transform: uppercase;font-weight: bold;">thunder delivery
+                            </h1>
+                            <i class="fa-solid fa-truck" style="font-size: 19px;color: #f1c40f"></i>
+                        </div>
+                        <p style="margin-top: 5px;">We are team is ingridien suplyer for everyone.</p>
+                        <div style="display: flex;align-items: center;justify-content: space-between;">
+                            <div style="font-size: 20px;">
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                                <i class="fa-solid fa-star-of-david" style="color: #f1c40f;margin: 5px;"></i>
+                            </div>
+                           <button class="btn2 bg-primary" style="border: none;padding: 6px 10px;border-radius: 5px;">contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <script>
+                $(document).ready(function () {
+                    var slide = $('.slide2');
+                    ind = 0;
+                    slide.eq(1).hide();
+                    $('.btn2').click(function () {
+                        slide.eq(ind).hide();
+                        ind++;
+                        if (ind > 1) {
+                            ind = 0;
+                        }
+                        slide.eq(ind).show();
+                    })
+                })
+            </script>
+        </div></div>
 </body>
 </html>
