@@ -1,3 +1,23 @@
+<?php
+    $con = new mysqli('localhost','root','','php_g1');
+    if(isset($_POST['tsave'])){
+        $name = $_POST['tname'];
+        $phone = $_POST['tphone'];
+        $food = $_POST['tfood'];
+        $adr= $_POST['tadr'];
+        if($name!=""||$phone!=""||$food!=""||$agr!=""){
+            $sql = "INSERT INTO food VALUES('$name','$phone','$food','$adr')";
+            $con->query($sql);
+        }else{
+            ?>
+                <script>
+                    alert("Please input all info!!!");
+                </script>
+            <?php
+        }
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,29 +34,30 @@
 </head>
 <body class="bg-warning">
     <div class="container">
-        <div class="row">
+        <div class="row" >
             <div class="col-12">
-                <form action="" class="mt-5">
+                <form action="contace.php" class="mt-5" method="post">
                     <h3 style="text-transform: uppercase;margin-bottom: 20px;font-size: 40px;">contace us</h3>
                     <hr class="mb-5">
                     <div class="mb-3">
                         <label for="first name" style="text-transform: uppercase;font-size: 13px;">first name</label><br>
-                        <input type="text" placeholder="" style="width: 50%;border: none;outline: none;border-radius: 5px;">
+                        <input type="text" name="tname" placeholder="" style="width: 50%;border: none;outline: none;border-radius: 5px;">
                     </div>
                     <div class="mb-3">
                          <label for="last name" style="text-transform: uppercase;font-size: 13px;">number phone</label><br>
-                        <input type="number phone" placeholder="" style="width: 50%;border: none;outline: none;border-radius: 5px;">
+                        <input type="number phone" name="tphone" placeholder="" style="width: 50%;border: none;outline: none;border-radius: 5px;">
                     </div>
                      <div class="mb-3">
                          <label for="food" style="text-transform: uppercase;font-size: 13px;">type of food</label><br>
-                        <input type="text" placeholder="" style="width: 50%;border: none;outline: none;border-radius: 5px;">
+                        <input type="text" name="tfood" placeholder="" style="width: 50%;border: none;outline: none;border-radius: 5px;">
                     </div>
                     <div class="mb-2">
                         <label for="food" style="text-transform: uppercase;font-size: 13px;">write your home address</label><br>
-                        <textarea name="" id="" style="width: 100%;height: 180px;border: none;outline: none;"></textarea>
+                        <textarea name="tadr" id="" style="width: 100%;height: 180px;border: none;outline: none;"></textarea>
                     </div>
                     <div>
-                        <button style="background-color: #7a6200;padding: 10px 10px;border: none;font-weight: bold;"><a href="promote.html" style="text-decoration: none;color: white;">Submit</a></button>
+                        <button style="background-color: #7a6200;padding: 10px 8px;border: none;font-weight: bold;" name="tsave">Submit</button>
+                        <button style="background-color: #7a6200;padding: 10px 8px;border: none;font-weight: bold;" name="tsave"><a href="data.php" style="text-decoration: none;color: black;font-size: 13px;">Check Order</a></button>
                     </div>
                 </form>
             </div>
